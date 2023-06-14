@@ -1,11 +1,12 @@
 import {Router} from 'express'
-import { createNewTaller, getTalleres } from '../controllers/Tallerusers.controller';
+import { createNewTaller, deleteTallerById, getTallerById, getTalleres } from '../controllers/Tallerusers.controller';
 
 const router = Router();
 
 router.get('/talleres', getTalleres)
 router.post('/talleres', createNewTaller)
-router.delete('/talleres', )
+router.get('/talleres/:id_taller', getTallerById)
+router.delete('/talleres/:id_taller', deleteTallerById)
 router.put('/talleres', )
 
 export default router
