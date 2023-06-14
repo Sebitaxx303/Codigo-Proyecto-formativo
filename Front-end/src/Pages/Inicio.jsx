@@ -1,35 +1,10 @@
-import { Link } from "react-router-dom"
 import React from "react" 
 import Navbarinic from "../Components/Navbarinic"
 
-const Inicio = ()=>{
-  /*
-  const wrapper = document.querySelector(".wrapper");
-  const loginLink = document.querySelector(".login-link");
-  const registerLink = document.querySelector(".register-link");
-  const btnPopup = document.querySelector(".btnLogin-popup");
-  const iconClose = document.querySelector(".icon-close");
-  
-  registerLink.addEventListener = ("click", () => {
-  wrapper.classList.add("active");
-  });
-  
-  loginLink.addEventListener("click", () => {
-  wrapper.classList.remove("active");
-  });
-  
-  btnPopup.addEventListener("click", () => {
-  wrapper.classList.add("active-popup");
-  });
-  
-  iconClose.addEventListener("click", () => {
-  wrapper.classList.remove("active-popup");
-  });
-
-  */
+const Inicio = () =>{
     return(
         <>
-            <Navbarinic/>
+            <Navbarinic/> {/*NAV BAR PRINCIPAL DE INICIO */}
             {/*ABRE iNFONAV*/} 
             <header className="header container-fluit justify-items-center">
               <nav className="nav d-flex bg-primary border-top justify-content-center">

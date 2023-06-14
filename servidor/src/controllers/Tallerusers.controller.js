@@ -1,10 +1,13 @@
 import {getConnection,sql,queries} from '../database'
 
+//CONTROLADORES DE TALLERES
 // GET de talleres 
 export const getTalleres = async (req, res) => {
     try {
         const pool = await getConnection()
-        const result = await pool.request().query(queries.getTalleres);
+        const result = await pool
+        .request()
+        .query(queries.getTalleres);
         res.json(result.recordset) 
     } catch (error) {
         res.status(500);
@@ -12,7 +15,6 @@ export const getTalleres = async (req, res) => {
     }
 
 };
-
 //POST de talleres
 export const createNewTaller = async (req, res) => {
 
@@ -30,7 +32,6 @@ export const createNewTaller = async (req, res) => {
     .input("correo", sql.VarChar, correo)
     .input("telefono", sql.VarChar, telefono)
     .query(queries.addTalleres);
-
     res.json({nombre_taller, rut, direccion, correo, telefono})
     } catch (error) {
         res.status(500);
@@ -38,7 +39,8 @@ export const createNewTaller = async (req, res) => {
 
     const pool = await getConnection();
 
-    const result = await pool.request()
+    const result = await pool
+    .request()
     .input("nombre_taller", sql.VarChar, nombre_taller)
     .input("rut",  sql.VarChar,rut)
     .input("direccion",  sql.VarChar,direccion)
@@ -47,7 +49,6 @@ export const createNewTaller = async (req, res) => {
     .query(queries.addTalleres);
     res.json(result.recordset)
 };
-
 // GET BY ID de talleres
 export const getTallerById = async  (req,res) => {
     const {id_taller} = req.params
@@ -63,7 +64,8 @@ export const deleteTallerById = async  (req,res) => {
     try {
         const {id_taller} = req.params
         const pool = await getConnection()
-        const result = await pool.request()
+        const result = await pool
+        .request()
         .input('id_taller', id_taller)
         .query(queries.deleteTalleresById)
         res.send(result)
@@ -71,8 +73,34 @@ export const deleteTallerById = async  (req,res) => {
         res.sendStatus(204)
     }
 }
+//UPDATE BY ID de talleres
+export const updateTallerById = async (req,res) => {
+    const {nombre_taller, rut, direccion, correo, telefono} = req.body
+    const {id_taller} = req.params
+    try {
+        const pool = await getConnection()
+        const result = await pool
+        .request()
+        .input('id_taller', id_taller)
+        .input("nombre_taller", sql.VarChar, nombre_taller)
+        .input("rut", sql.VarChar, rut)
+        .input("direccion", sql.VarChar, direccion)
+        .input("correo", sql.VarChar, correo)
+        .input("telefono", sql.VarChar, telefono)
+        .query(queries.updateTallerById);
+        res.json({nombre_taller, rut, direccion, correo, telefono})
+    } catch (error) {
+        res.send(error.message)
+        res.senStatus(500)
+    }
 
-//
-export const updateTallerByid = async (req,res) => {
-    
+}
+//CONTROLADORES DE MAQUINAS
+//GET de maquinas
+export const getTiposMaquinas = async (req,res) => {
+    const pool = await getConnection()
+    const result = await pool
+    .request()
+    .query(queries.getTiposMaquinas)
+    res.send(result.recordset)
 }
