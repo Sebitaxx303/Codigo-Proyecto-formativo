@@ -84,7 +84,7 @@ const Navbarinic = () =>{
                                   <div className="modal-body">
                                   <form action="#">
                                     <div className="input-box border-light">
-                                      <div class="dropdown">
+                                      <div className="dropdown">
                                         <button className="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                           Crear Cuenta
                                         </button>
@@ -117,46 +117,46 @@ const Navbarinic = () =>{
                                     </div>
                                     <div className="modal-body">
                                       <form action="#">
-                                      <div class="mb-3">
-                                            <label for="" class="form-label text-light">Nombre del taller</label>
-                                            <input type="text" class="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autocomplete="off"/>
+                                      <div className="mb-3">
+                                            <label for="" className="form-label text-light">Nombre del taller</label>
+                                            <input type="text" className="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autoComplete="off"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="" class="form-label text-light">RUT del Taller</label>
-                                            <input type="number" class="form-control" id="rut_taller" autocomplete="off" placeholder="ingrese el RUT de su taller"/>
+                                          <div className="mb-3">
+                                            <label for="" className="form-label text-light">RUT del Taller</label>
+                                            <input type="number" className="form-control" id="rut_taller" autoComplete="off" placeholder="ingrese el RUT de su taller"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                              <label for="" class="form-label text-light">nombre del encargado</label>
-                                              <input type="text" class="form-control" id="nom_enc" autocomplete="off" placeholder="ingrese el nombre completo del encargado"/>
+                                          <div className="mb-3">
+                                              <label for="" className="form-label text-light">nombre del encargado</label>
+                                              <input type="text" className="form-control" id="nom_enc" autoComplete="off" placeholder="ingrese el nombre completo del encargado"/>
                                             </div>
 
-                                          <div class="mb-3">
-                                              <label for="exampleInputPassword1" class="form-label text-light">Numero de telefono</label>
-                                              <input type="number" class="form-control" id="numero" autocomplete="off" placeholder="ingrese su numero telefonico"/>
+                                          <div className="mb-3">
+                                              <label for="exampleInputPassword1" className="form-label text-light">Numero de telefono</label>
+                                              <input type="number" className="form-control" id="numero" autoComplete="off" placeholder="ingrese su numero telefonico"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">Correo</label>
-                                            <input type="gmail" class="form-control" id="correo" autocomplete="off" placeholder="ingrese su correo"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">Correo</label>
+                                            <input type="gmail" className="form-control" id="correo" autoComplete="off" placeholder="ingrese su correo"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">contraseña</label>
-                                            <input type="password" class="form-control" id="contraseña" autocomplete="off" placeholder="ingrese su contraseña"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">contraseña</label>
+                                            <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">Confirmar contraseña</label>
-                                            <input type="password" class="form-control" id="contraseña" autocomplete="off" placeholder="ingrese su contraseña otra vez"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">Confirmar contraseña</label>
+                                            <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña otra vez"/>
                                           </div>
 
-                                          <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input " id="exampleCheck1"/>
-                                            <label class="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
+                                          <div className="mb-3 form-check">
+                                            <input type="checkbox" className="form-check-input " id="exampleCheck1"/>
+                                            <label className="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
                                           </div>
-                                          <button type="submit" class="btn btn-primary">Registrate</button>
+                                          <button type="submit" className="btn btn-primary">Registrate</button>
                                       </form>
                                     </div>
                                     <div className="modal-footer justify-content-center">
@@ -179,46 +179,46 @@ const Navbarinic = () =>{
                                     </div>
                                     <div className="modal-body">
                                       <form action="#">
-                                      <div class="mb-3">
-                                            <label for="" class="form-label text-light">Nombre del taller</label>
-                                            <input type="text" class="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autocomplete="off"/>
+                                      <div className="mb-3">
+                                            <label for="" className="form-label text-light">Nombre del taller</label>
+                                            <input type="text" className="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autoComplete="off"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="" class="form-label text-light">RUT del Taller</label>
-                                            <input type="number" class="form-control" id="rut_taller" autocomplete="off" placeholder="ingrese elRUT de su taller"/>
+                                          <div className="mb-3">
+                                            <label for="" className="form-label text-light">RUT del Taller</label>
+                                            <input type="number" className="form-control" id="rut_taller" autoComplete="off" placeholder="ingrese elRUT de su taller"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                              <label for="" class="form-label text-light">nombre del encargado</label>
-                                              <input type="text" class="form-control" id="nom_enc" autocomplete="off" placeholder="ingrese el nombre completo del encargado"/>
+                                          <div className="mb-3">
+                                              <label for="" className="form-label text-light">nombre del encargado</label>
+                                              <input type="text" className="form-control" id="nom_enc" autoComplete="off" placeholder="ingrese el nombre completo del encargado"/>
                                             </div>
 
-                                          <div class="mb-3">
-                                              <label for="exampleInputPassword1" class="form-label text-light">Numero de telefono</label>
-                                              <input type="number" class="form-control" id="numero" autocomplete="off" placeholder="ingrese su numero telefonico"/>
+                                          <div className="mb-3">
+                                              <label for="exampleInputPassword1" className="form-label text-light">Numero de telefono</label>
+                                              <input type="number" className="form-control" id="numero" autoComplete="off" placeholder="ingrese su numero telefonico"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">Correo</label>
-                                            <input type="gmail" class="form-control" id="correo" autocomplete="off" placeholder="ingrese su correo"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">Correo</label>
+                                            <input type="gmail" className="form-control" id="correo" autoComplete="off" placeholder="ingrese su correo"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">contraseña</label>
-                                            <input type="password" class="form-control" id="contraseña" autocomplete="off" placeholder="ingrese su contraseña"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">contraseña</label>
+                                            <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña"/>
                                           </div>
 
-                                          <div class="mb-3">
-                                            <label for="exampleInputPassword1" class="form-label text-light">Confirmar contraseña</label>
-                                            <input type="password" class="form-control" id="contraseña" autocomplete="off" placeholder="ingrese su contraseña otra vez"/>
+                                          <div className="mb-3">
+                                            <label for="exampleInputPassword1" className="form-label text-light">Confirmar contraseña</label>
+                                            <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña otra vez"/>
                                           </div>
 
-                                          <div class="mb-3 form-check">
-                                            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
-                                            <label class="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
+                                          <div className="mb-3 form-check">
+                                            <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
+                                            <label className="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
                                           </div>
-                                          <button type="submit" class="btn btn-primary">Registrarse</button>
+                                          <button type="submit" className="btn btn-primary">Registrarse</button>
                                       </form>
                                     </div>
                                     <div className="modal-footer justify-content-center">

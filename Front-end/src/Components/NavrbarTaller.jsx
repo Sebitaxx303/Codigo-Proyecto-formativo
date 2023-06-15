@@ -3,18 +3,18 @@ const NavbarTaller= () => {
     return(
         <>  
             {/*ABRE NAVBAR TALLER*/}
-            <nav class="navbar container-fluid bg-primary">
-                <div class="container-fluid">
-                    <div class="nav-item h-auto col-2 position-relative text-center"><img class="img-thumbnail" style={{borderRadius: '100%', width: '100px'}} src="../images/download.png" alt=""/><div class="text-center"><h3>confeccionssas</h3></div></div>
-                    <div class="nav-item  text-center" id="menu">
+            <nav className="navbar container-fluid bg-primary">
+                <div className="container-fluid">
+                    <div className="nav-item h-auto col-2 position-relative text-center"><img className="img-thumbnail" style={{borderRadius: '100%', width: '100px'}} src="../images/download.png" alt=""/><div className="text-center"><h3>confeccionssas</h3></div></div>
+                    <div className="nav-item  text-center" id="menu">
                         <ul>
-                            <li class=""><Link to="">Historial de peticiones</Link></li>
-                            <li class="">  <Link to="">Registrar maquinas</Link></li>
-                            <li class=""> <Link to="">Registro de calificaciones</Link></li>
-                            <li class=""><Link to="#">Opciones de usuario</Link> 
+                            <li className=""><Link to="">Historial de peticiones</Link></li>
+                            <li className="">  <Link to="">Registrar maquinas</Link></li>
+                            <li className=""> <Link to="">Registro de calificaciones</Link></li>
+                            <li className=""><Link to="#">Opciones de usuario</Link> 
                                 <ul>
-                                <li class=""><Link to="/InfoCuentaTaller">Informacion de la cuenta</Link></li>
-                                <li class=""><Link to="/">Cerrar sesión</Link></li>
+                                <li className=""><Link to="/InfoCuentaTaller">Informacion de la cuenta</Link></li>
+                                <li className=""><Link to="/">Cerrar sesión</Link></li>
                                 </ul>
                             </li>
                         </ul>

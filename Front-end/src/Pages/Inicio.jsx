@@ -1,22 +1,22 @@
 import React from "react" 
 import Navbarinic from "../Components/Navbarinic"
 
+
 const Inicio = () =>{
     return(
         <>
-            <Navbarinic/> {/*NAV BAR PRINCIPAL DE INICIO */}
-            {/*ABRE iNFONAV*/} 
-            <header className="header container-fluit justify-items-center">
+          <Navbarinic/>{/*NAV BAR PRINCIPAL DE INICIO */}
+          {/*ABRE iNFONAV*/} 
+          <header className="header container-fluit justify-items-center">
               <nav className="nav d-flex bg-primary border-top justify-content-center">
-                  <a href="#">contacto</a>
+                  <a href="#Tituloservicios">contacto</a>
                   <a href="#Tituloservicios">Servicios</a>
-                  <a href="#">Sobre nosotros</a>
+                  <a href="#Tituloservicios">Sobre nosotros</a>
               </nav>
-            </header>
-            {/*CIERRA iNFONAV*/}
-
-            {/*ABRE CARRUSEL*/}         
-            <div className="container mt-2" id="carrucel">
+          </header>
+          {/*CIERRA iNFONAV*/}
+          {/*ABRE CARRUSEL*/}         
+          <div className="container mt-2" id="carrucel">
                   <div id="carouselExampleCaptions" className="carousel slide">
                     <div className="carousel-indicators">
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
@@ -54,14 +54,13 @@ const Inicio = () =>{
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
-            </div>
-            {/*CIERRA CARRUSEL*/} 
-
-            {/*ABRE SECCION INFO*/}
-            <div className="text-center" id="Tituloservicios">
+          </div>
+          {/*CIERRA CARRUSEL*/} 
+          {/*ABRE SECCION INFO*/}
+          <div className="text-center" id="Tituloservicios">
               <h2>Nuestros servicios</h2>
-            </div>
-            <div className="container mt-4" id="info">
+          </div>
+          <div className="container mt-4" id="info">
               <div className="row bg-secondary"style={{borderRadius:'3px'}}>
                 <div className=" col-5 p-3">
                   <img className="img-fluid" src="Images/tercera.jpg" alt="" style={{borderRadius: '5%'}}/>
@@ -86,17 +85,16 @@ const Inicio = () =>{
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae tenetur, nihil eos, id doloribus repudiandae consectetur cumque dicta praesentium rem sit temporibus voluptates suscipit saepe magnam tempora itaque distinctio!Lorem</span>
                 </div>
               </div>
-            </div>
-            {/*CIERRA SECCION INFO*/}
-
-            {/*ABRE FOOTER*/} 
-            <footer className=" bg-black text-center mt-4">
+          </div>
+          {/*CIERRA SECCION INFO*/}
+          {/*ABRE FOOTER*/} 
+          <footer className=" bg-black text-center mt-4">
               <div className="col-12 ">
 
               </div>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias quam nihil voluptas fugit voluptates eius provident voluptatem, aspernatur facere, at quasi minima, aut non? Sint voluptas voluptate sapiente officia atque!</p>
-            </footer>   
-            {/*CIERRA FOOTER*/} 
+          </footer>   
+          {/*CIERRA FOOTER*/} 
         </>
     )
 }
