@@ -7,8 +7,8 @@ const Inicio = () =>{
         <>
           <Navbarinic/>{/*NAV BAR PRINCIPAL DE INICIO */}
           {/*ABRE iNFONAV*/} 
-          <header className="header container-fluit justify-items-center">
-              <nav className="nav d-flex bg-primary border-top justify-content-center">
+          <header className="header justify-items-center">
+              <nav className="nav d-flex border-top justify-content-center" style={{backgroundColor: "#4F51652"}}>
                   <a href="#Tituloservicios">contacto</a>
                   <a href="#Tituloservicios">Servicios</a>
                   <a href="#Tituloservicios">Sobre nosotros</a>
@@ -88,7 +88,7 @@ const Inicio = () =>{
           </div>
           {/*CIERRA SECCION INFO*/}
           {/*ABRE FOOTER*/} 
-          <footer className=" bg-black text-center mt-4">
+          <footer className=" bg-black mt-4 container">
               <div className="col-12 ">
 
               </div>

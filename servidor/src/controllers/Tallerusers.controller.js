@@ -95,6 +95,7 @@ export const updateTallerById = async (req,res) => {
     }
 
 }
+
 //CONTROLADORES DE MAQUINAS
 //GET de maquinas
 export const getTiposMaquinas = async (req,res) => {

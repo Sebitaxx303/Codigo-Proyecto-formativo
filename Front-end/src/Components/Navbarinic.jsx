@@ -3,7 +3,7 @@ const Navbarinic = () =>{
     return(
         <>
             {/*ABRE HEADER*/} 
-            <header className="header bg-primary container-fluid">
+            <header className="header container-fluid" style={{backgroundColor: "#547AA5"}}>
                     {/*ABRE NAV*/} 
                     <nav className="nav row">
 
@@ -35,25 +35,25 @@ const Navbarinic = () =>{
                             {/*ABRE PRIMER MODAL*/} 
                               <div className="modal fade" id="primermodal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div className="modal-dialog modal-dialog-centered">
-                                  <div className="modal-content" style={{ background: 'transparent', backdropFilter: 'blur(50px)', border: 'Solid'}}>
+                                  <div className="modal-content" style={{backdropFilter: 'blur(50px)', border: 'Solid'}}>
                                     <div className="modal-header">
-                                      <h1 className="modal-title fs-5 text-light"  id="exampleModalLabel">Iniciar sesión</h1>
+                                      <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
                                       <button type="button" className="btn-close"   data-bs-dismiss="modal" aria-label="Close"></ button>
                                     </div>
                                     <div className="modal-body">
                                       <form action="#">
-                                        <div className="input-box border-light">
-                                          <span className="icon"><i className="bi bi-envelope-fill border-light"></i><ion-icon name="mail"></ion-icon>
+                                        <div className="input-box">
+                                          <span className="icon"><i className="bi bi-envelope-fill"></i><ion-icon name="mail"></ion-icon>
                                             </span>
-                                          <input type="email" className="text-light" required/>
-                                          <label className="text-light">Email</label>
+                                          <input type="email" required/>
+                                          <label>Email</label>
                                         </div>
-                                        <div className="input-box border-light">
+                                        <div className="input-box">
                                           <span className="icon"><ion-icon  name="lock-closed"><i className="bi  bi-key-fill"></i></ion-icon></span>
-                                          <input type="password" className="text-light" required/>
-                                          <label className="text-light">Contraseña</label>
+                                          <input type="password"  required/>
+                                          <label>Contraseña</label>
                                         </div>
-                                        <div className="remember-forgot text-light">
+                                        <div className="remember-forgot">
                                           <label><input type="checkbox"/>Recuerdame</ label>
                                           < Link to ="#">Olvide la contraseña</ Link>
                                         </div>
@@ -63,7 +63,7 @@ const Navbarinic = () =>{
                                       </form>
                                     </div>
                                     <div className="modal-footer justify-content-center">
-                                      <p className=" text-light">¿No tienes una cuenta?</p>
+                                      <p>¿No tienes una cuenta?</p>
                                       <div className="d-grid gap-2 d-md-block">
                                       <button className="btn btn-primary btn-sm"  data-bs-target="#segundamodal"   data-bs-toggle="modal">Registarme</ button>
                                       </div>

@@ -9,7 +9,7 @@ const NavbarTaller= () => {
                     <div className="nav-item  text-center" id="menu">
                         <ul>
                             <li className=""><Link to="">Historial de peticiones</Link></li>
-                            <li className="">  <Link to="">Registrar maquinas</Link></li>
+                            <li className="">  <Link to="/Maquinas">Registrar maquinas</Link></li>
                             <li className=""> <Link to="">Registro de calificaciones</Link></li>
                             <li className=""><Link to="#">Opciones de usuario</Link> 
                                 <ul>

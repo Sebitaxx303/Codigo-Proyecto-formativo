@@ -262,7 +262,7 @@ header #contenido-nav {
   align-items: center;
   justify-content: space-evenly;
 }
-.main-container {
+/* .main-container {
   position: relative;
   width: 90%;
   height: 200px;
@@ -271,7 +271,7 @@ header #contenido-nav {
   padding: 30px;
   background-color: skyblue;
   border-radius: 0 0 30px 30px;
-}
+} */
 .menu-desplegable{
   height: 17vh;
   width: 15vw;
@@ -293,11 +293,11 @@ header #contenido-nav {
   transform: translateX(100vw);
 }
 
-.hola{
+/* .hola{
   position: absolute;
   bottom: -50%;
   right: 39%;
-}
+} */
 
 .input-container {
   position: absolute;

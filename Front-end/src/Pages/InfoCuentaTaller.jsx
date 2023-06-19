@@ -5,25 +5,33 @@ const InfoCuentaTaller = () => {
     return(
         <>
             <NavbarTaller/>
-                
-             <div className="container" id="container-img-perfil">
-               <div className="main-container">
-                 <div className="hola">
-                 <div className="preview-container">
-                   <img src="" id="preview" alt="" />
-                   <div className="btn-img input-container"> 
-                     <input type="file" id="archivo" name="archivo"/>   
-                   </div> 
+            {/**SE ABRE EL DIV CONTENEDOR DEL PERFIL DE USUARIO*/}
+            <div className="container" id="container-img-perfil">
+              
+              {/**SE ABRE SECCION DE FOTO DE PERFIL*/}         
+              <div className="container-fluid bg-primary rounded-bottom-5 position-relativa text-center p-3" style={{height:'10rem'}}>
+                  <div className="position-absolute start-50 translate-middle" style={{marginTop: '8rem'}}>
+                    <div className="preview-container">
+                      <div className="btn-img input-container"> 
+                        <input type="file" id="archivo" name="archivo"/>   
+                      </div> 
+                    </div>
+                  </div>
+              </div>
+              {/**SE CIERRA SECCION DE FOTO DE PERFIL*/}  
+
+              {/**SE ABRE SECCION DE INFORMACION DEL TALLER*/} 
+              <div className="container-fluid" style={{marginTop: '6rem'}}>    
+
+                  {/**SE ABRE SECCION DE NOMBRE DEL TALLER*/} 
+                 <div className="text-center">
+                   <h3 className="">Nombre Del Taller</h3>
                  </div>
-                 </div>
-               </div>
-                
-               <div className="perfil-usuario-body container row">
-                 <div className="perfil-usuario col-lg-4">       
+                 {/**SE CIERRA SECCION DE NOMBRE DEL TALLER*/}
+
+                 <div className="btn-sm">
+                      <button className='btn btn-primary'>Editar perfil</button>       
                      <ul className="lista-datos">
-                       <div className="text-center m-2 p-2 container-fluid" id="editar">
-                       <Link className="text-black">Editar Perfil</Link>
-                       </div>
                          <li><i className="bi bi-browser-safari"></i> Direccion de usuario:</li>
                          <li><i className="bi bi-telephone-fill"></i> Telefono:</li>
                          <li><i className="bi bi-bank2"></i> Cargo:</li>
@@ -49,19 +57,18 @@ const InfoCuentaTaller = () => {
                          </li>
                      </ul>
                  </div>
-                
-                 <div className="perfil-usuario-footer col-lg-7">
-                   <h3 className="titulo">Nombre Del Taller</h3>
-                     <h4 className="info">Info del Taller</h4>
-                     <p className="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                         tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                 </div>
-               </div>
-                
-             <footer className="container-fluit bg-black text-center p-5 mt-4">
-               &copy; 2023 Línea de Código
-             </footer>
+
+              </div>
+              {/**SE CIERRA SECCION DE INFORMACION DEL TALLER*/} 
+
+            </div>
+            {/**SE CIERRA EL DIV CONTENEDOR DEL PERFIL DE USUARIO*/}      
+
+            {/**SE ABRE EL FOOTER*/}         
+            <footer className="container-fluit bg-black text-center p-5 mt-4">
+              &copy; 2023 Línea de Código
+            </footer>
+            {/**SE CIERRA EL FOOTER*/}         
         </>
     )
 }
