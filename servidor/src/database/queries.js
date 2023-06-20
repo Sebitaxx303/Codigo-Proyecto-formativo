@@ -1,12 +1,12 @@
 
 export const queries = {
     //QUERIES DE CRUD DE TALLERES
-    getTalleres: 'SELECT * FROM tbl_talleres',
-    addTalleres: 'INSERT INTO tbl_talleres (nombre_taller,rut,direccion,correo,telefono) VALUES (@nombre_taller, @rut, @direccion, @correo, @telefono )',
-    getTalleresById: 'SELECT * FROM tbl_talleres WHERE id_taller = @id_taller',
-    deleteTalleresById: 'DELETE FROM tbl_talleres WHERE id_taller = @id_taller',
-    updateTallerById: 'UPDATE tbl_talleres SET nombre_taller = @nombre_taller, rut = @rut, direccion = @direccion , correo = @correo, telefono = @telefono  WHERE id_taller = @id_taller ',
+    getUsers: 'SELECT * FROM users',
+    addUsers: 'INSERT INTO users (name_entity, rut, u_address, email, Phone_number, user_type) VALUES (@name_entity, @rut, @u_address, @email, @Phone_number, @user_type )',
+    getUsersById: 'SELECT * FROM users WHERE id = @id',
+    deleteUsersById: 'DELETE FROM users WHERE id = @id',
+    updateUserById: 'UPDATE users SET name_entity = @name_entity, rut = @rut, u_address = @u_address , email = @email, Phone_number = @Phone_number, user_type = @user_type  WHERE id = @id ',
 
     //QUERIES DE CRUD DE MAQUINAS
-    getTiposMaquinas: 'SELECT * FROM tbl_tipo_maquinas'
+    getMachines: 'SELECT * FROM machines'
 }

@@ -4,7 +4,7 @@ const dbconfig = {
     user: 'sebas',
     password: '1234',
     server:  'localhost',
-    database: 'proyecto_f',
+    database: 'solctext',
     options: {    
         encrypt: true,
         trustServerCertificate: true,
