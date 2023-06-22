@@ -8,7 +8,7 @@ const Inicio = () =>{
           <Navbarinic/>{/*NAV BAR PRINCIPAL DE INICIO */}
           {/*ABRE iNFONAV*/} 
           <header className="header justify-items-center">
-              <nav className="nav d-flex border-top justify-content-center" style={{backgroundColor: "#4F51652"}}>
+              <nav className="nav d-flex border-top justify-content-center top-none" style={{backgroundColor: "#547AA5"}}>
                   <a href="#Tituloservicios">contacto</a>
                   <a href="#Tituloservicios">Servicios</a>
                   <a href="#Tituloservicios">Sobre nosotros</a>

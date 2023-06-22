@@ -29,13 +29,13 @@ const Navbarinic = () =>{
                             </svg></ Link>
                             </div>
                             {/*CIERRA REDES*/} 
-
+                    
                             <button type="button" data-bs-toggle="modal" data-bs-target="#primermodal" style = {{borderRadius: '12px', padding: '5px'}}>Inicio de Sesion</button>{/*BOTON PARA ABRIR VENTANA MODAL*/} 
 
                             {/*ABRE PRIMER MODAL*/} 
                               <div className="modal fade" id="primermodal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div className="modal-dialog modal-dialog-centered">
-                                  <div className="modal-content" style={{backdropFilter: 'blur(50px)', border: 'Solid'}}>
+                                  <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
                                       <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
                                       <button type="button" className="btn-close"   data-bs-dismiss="modal" aria-label="Close"></ button>
@@ -57,7 +57,7 @@ const Navbarinic = () =>{
                                           <label><input type="checkbox"/>Recuerdame</ label>
                                           < Link to ="#">Olvide la contraseña</ Link>
                                         </div>
-                                        <Link to="/Paginiciotaller" className="text-black text-decoration-none "><button type="submit" className="btn  btn-primary" data-bs-dismiss="modal" aria-label="Close">Entrar</button></Link>
+                                        <Link to="/Paginiciotaller" className="text-black text-decoration-none "><button type="submit" className="btn" style={{backgroundColor: '#547AA5'}} data-bs-dismiss="modal" aria-label="Close">Entrar</button></Link>
                                         <div className="login-register">
                                         </div>
                                       </form>
@@ -65,7 +65,7 @@ const Navbarinic = () =>{
                                     <div className="modal-footer justify-content-center">
                                       <p>¿No tienes una cuenta?</p>
                                       <div className="d-grid gap-2 d-md-block">
-                                      <button className="btn btn-primary btn-sm"  data-bs-target="#segundamodal"   data-bs-toggle="modal">Registarme</ button>
+                                      <button className="btn btn-sm" style={{backgroundColor: '#547AA5'}}  data-bs-target="#segundamodal"   data-bs-toggle="modal">Registarme</ button>
                                       </div>
                                     </div>
                                   </div>
@@ -76,16 +76,16 @@ const Navbarinic = () =>{
                             {/*ABRE SEGUNDA MODAL*/} 
                             <div className="modal fade " id="segundamodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                               <div className="modal-dialog modal-dialog-centered">
-                                <div className="modal-content" style={{ background: 'transparent', backdropFilter: 'blur(50PX)', border: 'Solid'}}>
+                                <div className="modal-content" style={{border: 'Solid'}}>
                                   <div className="modal-header">
-                                    <h1 className="modal-title fs-5 text-light" id="exampleModalLabel">Registrarse</h1>
+                                    <h1 className="modal-title fs-5 " id="exampleModalLabel">Registrarse</h1>
                                     <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                   </div>
                                   <div className="modal-body">
                                   <form action="#">
-                                    <div className="input-box border-light">
+                                    <div className="input-box">
                                       <div className="dropdown">
-                                        <button className="btn text-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <button className="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                           Crear Cuenta
                                         </button>
                                         <ul className="dropdown-menu text-center">
@@ -97,7 +97,7 @@ const Navbarinic = () =>{
                                   </form>
                                   </div>
                                   <div className="modal-footer justify-content-center" style={{marginTop: '150px'}}>
-                                    <p className="text-light">¿Ya tienes una cuenta?</p>
+                                    <p className="">¿Ya tienes una cuenta?</p>
                                     <div className="d-grid gap-2 d-md-block">
                                       <button className="btn btn-primary btn-sm"  data-bs-target="#primermodal"   data-bs-toggle="modal">Entrar</button>
                                     </div>
@@ -110,51 +110,51 @@ const Navbarinic = () =>{
                             {/*ABRE MODAL DE REGSITRO DE TALLER*/} 
                             <div className="modal fade" id="modalRegistroTaller" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div className="modal-dialog modal-dialog-scrollable">
-                                  <div className="modal-content" style={{ background: 'transparent', backdropFilter: 'blur(60px)', border: 'Solid'}}>
+                                  <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
-                                      <h1 className="modal-title fs-5 text-light"  id="exampleModalLabel">Iniciar sesión</h1>
+                                      <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
                                       <button type="button" className="btn-close"   data-bs-dismiss="modal" aria-label="Close"></ button>
                                     </div>
                                     <div className="modal-body">
                                       <form action="#">
                                       <div className="mb-3">
-                                            <label for="" className="form-label text-light">Nombre del taller</label>
+                                            <label for="" className="form-label">Nombre del taller</label>
                                             <input type="text" className="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autoComplete="off"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="" className="form-label text-light">RUT del Taller</label>
+                                            <label for="" className="form-label">RUT del Taller</label>
                                             <input type="number" className="form-control" id="rut_taller" autoComplete="off" placeholder="ingrese el RUT de su taller"/>
                                           </div>
 
                                           <div className="mb-3">
-                                              <label for="" className="form-label text-light">nombre del encargado</label>
+                                              <label for="" className="form-label">nombre del encargado</label>
                                               <input type="text" className="form-control" id="nom_enc" autoComplete="off" placeholder="ingrese el nombre completo del encargado"/>
                                             </div>
 
                                           <div className="mb-3">
-                                              <label for="exampleInputPassword1" className="form-label text-light">Numero de telefono</label>
+                                              <label for="exampleInputPassword1" className="form-label">Numero de telefono</label>
                                               <input type="number" className="form-control" id="numero" autoComplete="off" placeholder="ingrese su numero telefonico"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">Correo</label>
+                                            <label for="exampleInputPassword1" className="form-label">Correo</label>
                                             <input type="gmail" className="form-control" id="correo" autoComplete="off" placeholder="ingrese su correo"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">contraseña</label>
+                                            <label for="exampleInputPassword1" className="form-label">contraseña</label>
                                             <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">Confirmar contraseña</label>
+                                            <label for="exampleInputPassword1" className="form-label">Confirmar contraseña</label>
                                             <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña otra vez"/>
                                           </div>
 
                                           <div className="mb-3 form-check">
                                             <input type="checkbox" className="form-check-input " id="exampleCheck1"/>
-                                            <label className="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
+                                            <label className="form-check-label" for="exampleCheck1">acepto terminos y condiciones</label>
                                           </div>
                                           <button type="submit" className="btn btn-primary">Registrate</button>
                                       </form>
@@ -172,45 +172,45 @@ const Navbarinic = () =>{
                             {/*ABRE MODAL DE REGSITRO DE EMPRESA*/} 
                             <div className="modal fade" id="modalRegistroEmpresa" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
                                 <div className="modal-dialog modal-dialog-scrollable">
-                                  <div className="modal-content" style={{ background: 'transparent', backdropFilter: 'blur(60px)', border: 'Solid'}}>
+                                  <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
-                                      <h1 className="modal-title fs-5 text-light"  id="exampleModalLabel">Iniciar sesión</h1>
+                                      <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
                                       <button type="button" className="btn-close"   data-bs-dismiss="modal" aria-label="Close"></ button>
                                     </div>
                                     <div className="modal-body">
                                       <form action="#">
                                       <div className="mb-3">
-                                            <label for="" className="form-label text-light">Nombre del taller</label>
+                                            <label for="" className="form-label">Nombre del taller</label>
                                             <input type="text" className="form-control" id="Tipo_maquina" aria-describedby="emailHelp"placeholder="ingrese el nombre del taller" autoComplete="off"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="" className="form-label text-light">RUT del Taller</label>
+                                            <label for="" className="form-label">RUT del Taller</label>
                                             <input type="number" className="form-control" id="rut_taller" autoComplete="off" placeholder="ingrese elRUT de su taller"/>
                                           </div>
 
                                           <div className="mb-3">
-                                              <label for="" className="form-label text-light">nombre del encargado</label>
+                                              <label for="" className="form-label">nombre del encargado</label>
                                               <input type="text" className="form-control" id="nom_enc" autoComplete="off" placeholder="ingrese el nombre completo del encargado"/>
                                             </div>
 
                                           <div className="mb-3">
-                                              <label for="exampleInputPassword1" className="form-label text-light">Numero de telefono</label>
+                                              <label for="exampleInputPassword1" className="form-label">Numero de telefono</label>
                                               <input type="number" className="form-control" id="numero" autoComplete="off" placeholder="ingrese su numero telefonico"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">Correo</label>
+                                            <label for="exampleInputPassword1" className="form-label">Correo</label>
                                             <input type="gmail" className="form-control" id="correo" autoComplete="off" placeholder="ingrese su correo"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">contraseña</label>
+                                            <label for="exampleInputPassword1" className="form-label">contraseña</label>
                                             <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña"/>
                                           </div>
 
                                           <div className="mb-3">
-                                            <label for="exampleInputPassword1" className="form-label text-light">Confirmar contraseña</label>
+                                            <label for="exampleInputPassword1" className="form-label">Confirmar contraseña</label>
                                             <input type="password" className="form-control" id="contraseña" autoComplete="off" placeholder="ingrese su contraseña otra vez"/>
                                           </div>
 
