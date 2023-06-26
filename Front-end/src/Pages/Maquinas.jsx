@@ -10,8 +10,8 @@ const Maquinas = () => {
   return (
     <>
         <NavbarMaquinas/>
-        <div class="d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
-            <div class="rounded-2" style={{backgroundColor: '#858585', marginTop: "250px", padding: '200px'}}>
+        <div class="d-flex justify-content-center align-items-center max-height-100%">
+            <div class="rounded-2 text-center" style={{marginTop:'4rem', backgroundColor: '#547AA5',padding: '100px', width: '80%'}}>
                   {users != null ? (
                     users.map(user => (
                                   <table className="table mt-4 text-center">
@@ -40,7 +40,7 @@ const Maquinas = () => {
                               </table>
                     ))
                   ):
-                  ('no pasa nada')}
+                  ('no hay maquinas')}
             </div>
 
         </div>

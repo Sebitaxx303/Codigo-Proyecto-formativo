@@ -43,6 +43,11 @@ header #contenido-nav {
   align-items: center;
   justify-content: end;
 }
+.Servicios{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #nav-inicio-sesion {
   display: flex;
   align-items: center;

@@ -9,7 +9,7 @@ const InfoCuentaTaller = () => {
             <div className="container" id="container-img-perfil">
               
               {/**SE ABRE SECCION DE FOTO DE PERFIL*/}         
-              <div className="container-fluid bg-primary rounded-bottom-5 position-relativa text-center p-3" style={{height:'10rem'}}>
+              <div className="container-fluid rounded-bottom-5 position-relativa text-center p-3" style={{height:'10rem', backgroundColor: '#547AA5'}}>
                   <div className="position-absolute start-50 translate-middle" style={{marginTop: '8rem'}}>
                     <div className="preview-container">
                       <div className="btn-img input-container"> 
@@ -29,7 +29,7 @@ const InfoCuentaTaller = () => {
                  </div>
                  {/**SE CIERRA SECCION DE NOMBRE DEL TALLER*/}
 
-                 <div className="btn-sm">
+                 <div className="btn-sm" style={{width:'40%', marginLeft: '20rem'}}>
                       <button className='btn btn-primary'>Editar perfil</button>       
                      <ul className="lista-datos">
                          <li><i className="bi bi-browser-safari"></i> Direccion de usuario:</li>
@@ -38,7 +38,7 @@ const InfoCuentaTaller = () => {
                          <li><i className="bi bi-calendar-event-fill"></i> Fecha de creacion:</li>
                          <Link to="#"><li><i className="bi bi-clock-history"></i> Historial</li> </Link>
                          <li>
-                           <div className="dropdown">
+                           <div className="dropdown " style={{width:'50%'}}>
                              <Link className="btn btn-primary dropdown-toggle text-right" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                Tipos de maquinas
                              </Link>
@@ -65,7 +65,7 @@ const InfoCuentaTaller = () => {
             {/**SE CIERRA EL DIV CONTENEDOR DEL PERFIL DE USUARIO*/}      
 
             {/**SE ABRE EL FOOTER*/}         
-            <footer className="container-fluit bg-black text-center p-5 mt-4">
+            <footer className="container-fluid bg-black text-center p-5 mt-4">
               &copy; 2023 Línea de Código
             </footer>
             {/**SE CIERRA EL FOOTER*/}         
