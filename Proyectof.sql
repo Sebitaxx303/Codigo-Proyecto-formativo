@@ -33,8 +33,12 @@ insert into machine_types (machine_type) values ('medias'),('zapatos'),('jeans')
 go ----------------------------------------------
 create table machines(
 id_machine int primary key identity(1,1),
+id_user int foreign key references users,
 id_type int foreign key references machine_types
 )
+GO	
+select * from machines
+INSERT INTO machines (id_user,id_type) values (2,4)
 go ----------------------------------------------
 create table d_users_machines(
 id_user int foreign key references users,

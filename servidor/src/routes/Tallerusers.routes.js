@@ -1,5 +1,5 @@
 import {Router} from 'express'
-import { addUsers, deleteUsersById, getMachines, getUsersById, getUsers, updateUserById} from '../controllers/Tallerusers.controller';
+import { addUsers, deleteUsersById, getMachines, getUsersById, getUsers, updateUserById, addMachines} from '../controllers/Tallerusers.controller';
 
 const router = Router();
 
@@ -12,9 +12,9 @@ router.put('/users/:id',updateUserById)
 
 //RUTAS CRUD MAQUINAS
 router.get('/machines', getMachines)
-router.post('')
-router.get('')
-router.delete('')
-router.put('')
+router.post('/machines', addMachines)
+router.get('/machines/:id_user')
+router.delete('/machines/:id_user')
+router.put('/machines/:id_user')
 
 export default router
