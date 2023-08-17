@@ -88,7 +88,7 @@ const Inicio = () =>{
           </div>
           {/*CIERRA SECCION INFO*/}
           {/*ABRE FOOTER*/} 
-          <footer className="container-fluit bg-black text-center p-5 mt-4">
+          <footer className="container bg-black text-center p-5 mt-4">
                           < a to ="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                               className="bi bi-facebook" viewBox="0 0 16 16">
                               <path

@@ -40,7 +40,7 @@ const Maquinas = () => {
                               </table>
                     ))
                   ):
-                  ('no hay maquinas')}
+                  ('no hay usuarios')}
             </div>
 
         </div>

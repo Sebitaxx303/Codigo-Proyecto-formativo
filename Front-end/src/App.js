@@ -6,6 +6,7 @@ import 'bootstrap/dist/js/bootstrap.js'
 import Paginiciotaller from './Pages/Paginiciotaller';
 import InfoCuentaTaller from './Pages/InfoCuentaTaller';
 import Maquinas from './Pages/Maquinas';
+import InicioEmpresa from './Pages/InicioEmpresa';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Paginiciotaller" element={<Paginiciotaller/>} />
         <Route path="/InfoCuentaTaller" element={<InfoCuentaTaller/>}/>
         <Route path="/Maquinas" element={<Maquinas/>}/>
+        <Route path="/InicioEmpresa" element={<InicioEmpresa/>}/>
       </Routes>
       </BrowserRouter>
     </div>
