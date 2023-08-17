@@ -11,7 +11,7 @@ const Maquinas = () => {
     <>
         <NavbarMaquinas/>
         <div class="d-flex justify-content-center align-items-center max-height-100%">
-            <div class="rounded-2 text-center" style={{marginTop:'4rem', backgroundColor: '#547AA5',padding: '100px', width: '80%'}}>
+            <div class="rounded-2 text-center" style={{marginTop:'4rem', backgroundColor: '#79155B',padding: '100px', width: '80%'}}>
                   {users != null ? (
                     users.map(user => (
                                   <table className="table mt-4 text-center">
@@ -29,7 +29,7 @@ const Maquinas = () => {
                                   <tbody>
                                     <tr>
                                       <th scope="row">{user.id}</th>
-                                      <td>{user.name_entity}</td>
+                                      <td>{user.company_name}</td>
                                       <td>{user.rut}</td>
                                       <td>{user.u_address}</td>
                                       <td>{user.email}</td>

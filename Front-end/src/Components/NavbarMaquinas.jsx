@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 const NavbarMaquinas = () => {
   return (
     <>
-        <nav class="navbar row navbar-expand-lg" style={{backgroundColor: '#547AA5'}}>
+        <nav class="navbar row navbar-expand-lg" style={{backgroundColor: '#79155B'}}>
           <div className='contaner-fluid'>
                 <div class="nav-item h-auto  aling-content-center col-5 text-center float-start">
                     <img class="img-thumbnail" style={{borderRadius: '10%', width: '100px'}}   src="../images/download.png" alt=""/>

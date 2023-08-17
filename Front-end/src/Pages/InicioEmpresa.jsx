@@ -1,8 +1,8 @@
 import React from 'react'
-import App from '../Function/funcion'
+// import App from '../Function/funcion'
 
 const InicioEmpresa = () => {
-  App()
+  // App()
   return (
     <div>InicioEmpresa</div>
   )

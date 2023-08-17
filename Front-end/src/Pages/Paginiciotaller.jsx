@@ -5,8 +5,10 @@ const Paginiciotaller = () =>{
         <>
         <NavbarTaller/>
             <div className="container">
-                <div className="container-fluid mt-5">
-                    <div className="container text-center bg-light" style={{borderRadius: "2rem"}}>
+            <div className="container-fluid rounded-bottom-5 position-relative text-center p-3 border-top-0" style={{height:'auto', backgroundColor: '#79155B', border: '2px solid black'}}>
+            
+                <div className="container-fluid mt-1">
+                    <div className="container text-center text-light">
                     <h1>Publicaciones de confección</h1>
                     </div>
                     <div className="container bg-secondary bg-opacity-75 ">
@@ -75,6 +77,7 @@ const Paginiciotaller = () =>{
                         </div>
                     </div>
                 </div> 
+                </div>
             </div>
           {/*ABRE FOOTER*/} 
           <footer className="container-fluit bg-black text-center p-5 mt-4">

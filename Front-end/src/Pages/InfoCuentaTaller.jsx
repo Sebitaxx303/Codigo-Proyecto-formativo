@@ -10,18 +10,18 @@ const InfoCuentaTaller = () => {
     return(
         <>
             {/**SE ABRE EL DIV CONTENEDOR DEL PERFIL DE USUARIO*/}
-            <div className="container" id="container-img-perfil" style={{width: '60%'}}>     
-              {/**SE ABRE SECCION AZUL DE PERFIL DE USUATIO*/}      
-              <div className="container-fluid rounded-bottom-5 position-relative text-center p-3 border-top-0" style={{height:'50rem', backgroundColor: '#547AA5', border: '1px solid black'}}>
+            <div className="container">     
+              {/**SE ABRE SECCION AZUL DE PERFIL DE USUATIO*/} 
+              <div className="container-fluid rounded-bottom-5 position-relative text-center p-3 border-top-0" style={{height:'auto', backgroundColor: '#79155B', border: '1px solid black'}}>
               <div className="d-grid col-1 mx-auto float-start">
-              <Link className='btn btn-warning ' to={'/Paginiciotaller'}>Volver</Link>
+              <Link className='btn text-light z-2' style={{backgroundColor: '#FFBA86'}} to={'/Paginiciotaller'}>Volver</Link>
               </div> 
               <div className="d-grid col-1 mx-auto float-end"> 
-              <Link  className='btn btn-danger' to={'/'}>Salir </Link>
+              <Link  className='btn  text-light z-2'style={{backgroundColor: '#FFBA86'}} to={'/'}>Salir </Link>
               </div> 
 
                   {/**SE ABRE SECCION DE FOTO DE PERFIL DE USUATIO*/}  
-                  <div className="position-absolute start-50 translate-middle" style={{marginTop: '10rem'}}>
+                  <div className="position-absolute start-50 translate-middle z-2" style={{marginTop: '10rem'}}>
                     <div className="preview-container">
                       <div className="btn-img input-container"> 
                         <input type="file" id="archivo" name="archivo"/>   

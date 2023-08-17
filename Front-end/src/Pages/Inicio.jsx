@@ -8,7 +8,7 @@ const Inicio = () =>{
           <Navbarinic/>{/*NAV BAR PRINCIPAL DE INICIO */}
           {/*ABRE iNFONAV*/} 
           <header className="header justify-items-center">
-              <nav className="nav d-flex justify-content-center top-none" style={{backgroundColor: "#547AA5"}}>
+              <nav className="nav d-flex justify-content-center top-none" style={{backgroundColor: "#C23373"}}>
                   <a href="#Tituloservicios">contacto</a>
                   <a href="#Tituloservicios">Servicios</a>
                   <a href="#Tituloservicios">Sobre nosotros</a>
@@ -16,9 +16,9 @@ const Inicio = () =>{
           </header>
           {/*CIERRA iNFONAV*/}
           {/*ABRE CARRUSEL*/}         
-          <div className="container mt-2" id="carrucel">
-                  <div id="carouselExampleCaptions" className="carousel slide">
-                    <div className="carousel-indicators">
+          <div className="container rounded mt-5"  id="carrucel">
+                  <div id="carouselExampleCaptions" style={{border: '2px solid #F6635C'}} className=" rounded carousel slide">
+                    <div className="carousel-indicators" style={{color: '#79155B'}}>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
                         aria-current="true" aria-label="Slide 1"></button>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
@@ -50,7 +50,7 @@ const Inicio = () =>{
                     </button>
                     <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
                       data-bs-slide="next">
-                      <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span className="carousel-control-next-icon" style={{color: '#FFBA86'}} aria-hidden="true"></span>
                       <span className="visually-hidden">Next</span>
                     </button>
                   </div>
@@ -59,6 +59,7 @@ const Inicio = () =>{
           {/*ABRE SECCION INFO*/}
           <div className="text-center" id="Tituloservicios">
               <h2>Nuestros servicios</h2>
+              <hr style={{color: '#79155B'}}/>
           </div>
           <div className="container mt-4" id="info">
               <div className="row"style={{borderRadius:'3px'}}>
@@ -88,7 +89,7 @@ const Inicio = () =>{
           </div>
           {/*CIERRA SECCION INFO*/}
           {/*ABRE FOOTER*/} 
-          <footer className="container bg-black text-center p-5 mt-4">
+          <footer className="container rounded-top bg-black text-center p-5 mt-4" style={{border: '2px solid #C23373'}}>
                           < a to ="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                               className="bi bi-facebook" viewBox="0 0 16 16">
                               <path
