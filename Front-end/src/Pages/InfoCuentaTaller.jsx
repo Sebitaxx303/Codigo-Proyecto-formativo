@@ -12,25 +12,25 @@ const InfoCuentaTaller = () => {
             {/**SE ABRE EL DIV CONTENEDOR DEL PERFIL DE USUARIO*/}
             <div className="container">     
               {/**SE ABRE SECCION AZUL DE PERFIL DE USUATIO*/} 
-              <div className="container-fluid rounded-bottom-5 position-relative text-center p-3 border-top-0" style={{height:'auto', backgroundColor: '#79155B', border: '1px solid black'}}>
+              <div className="container-fluid rounded-bottom-5 position-relative text-center p-3 border-top-0" style={{height:'auto', backgroundColor: '#C23373', border: '1px solid black'}}>
               <div className="d-grid col-1 mx-auto float-start">
-              <Link className='btn text-light z-2' style={{backgroundColor: '#FFBA86'}} to={'/Paginiciotaller'}>Volver</Link>
+              <Link className='btn text-light z-2' style={{backgroundColor: '#79155B'}} to={'/Paginiciotaller'}>Volver</Link>
               </div> 
               <div className="d-grid col-1 mx-auto float-end"> 
-              <Link  className='btn  text-light z-2'style={{backgroundColor: '#FFBA86'}} to={'/'}>Salir </Link>
+              <Link  className='btn  text-light z-2'style={{backgroundColor: '#79155B'}} to={'/'}>Salir </Link>
               </div> 
 
                   {/**SE ABRE SECCION DE FOTO DE PERFIL DE USUATIO*/}  
-                  <div className="position-absolute start-50 translate-middle z-2" style={{marginTop: '10rem'}}>
-                    <div className="preview-container">
-                      <div className="btn-img input-container"> 
-                        <input type="file" id="archivo" name="archivo"/>   
+                  <div className="position-absolute start-50 translate-middle z-0" style={{marginTop: '10rem'}}>
+                    <div className="preview-container" style={{border: '5px solid #79155B '}}>
+                      <div className="btn-img input-container" style={{position: 'absolute', top: '13rem'}}> 
+                        <input type="file" id="archivo"   name="archivo"/>   
                       </div> 
                     </div>
                   </div>
                   {/**SE CIERRA SECCION DE FOTO DE PERFIL DE USUATIO*/}  
                   {/**SE ABRE SECCION DE INFORMACION DEL TALLER*/} 
-                  <div className='container rounded ' style={{ marginTop:'25rem' ,width: '50%', border: '2px solid black',    backgroundColor: 'rgba(194, 194, 189, 0.671)', height: 'auto'}}>    
+                  <div className='container rounded ' style={{ marginTop:'20rem' ,width: '50%', border: '2px solid white',    backgroundColor: 'rgba(165, 148, 148)', height: 'auto'}}>    
                     {/**SE ABRE SECCION DE NOMBRE DEL TALLER*/} 
                     {users != null ? (users.map(user => (
                       <div>
@@ -85,7 +85,7 @@ const InfoCuentaTaller = () => {
                    </div>
                     ))
                      ):
-                     ('no hay maquinas')}
+                     ('no hay ususarios')}
                   </div>
                    {/**SE CIERRA SECCION DE INFORMACION DEL TALLER*/} 
               </div>

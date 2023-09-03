@@ -4,25 +4,25 @@ const Navbarinic = () =>{
     return(
         <>
             {/*ABRE HEADER*/} 
-            <header className="header container-fluid" style={{backgroundColor: "#79155B"}}>
+            <header className="header container-fluid" style={{backgroundColor: "#3A0CA3"}}>
                     {/*ABRE NAV*/} 
                     <nav className="nav row">
                       
                     <div className="col-6 row"> 
-                            <div className="col-3 p-3 ">
+                            {/* <div className="col-3 p-3 ">
                                 <img src="./images/logo2.jpeg" alt="icon" style={{borderRadius: '100%', width: '65%', height: '8rem'}}/>
-                            </div>
+                            </div> */}
                             <div className="col-6  align-middle "style={{color: 'white'}}>
                                 <h1 className="mt-5">softex</h1>
                             </div>
                     </div>
                         {/*ABRE NAV DE INICIO DE SESIÓN Y REDES SOCIALES*/} 
                         <div className="col-6" id="contenido-nav"> 
-                            <button type="button" data-bs-toggle="modal" data-bs-target="#primermodal" style = {{borderRadius: '12px', padding: '5px', border: '1px solid #C23373'}}>Inicio de Sesion</button>{/*BOTON PARA ABRIR VENTANA MODAL*/} 
+                            <button type="button" data-bs-toggle="modal" data-bs-target="#primermodal" style = {{borderRadius: '12px', padding: '5px', border: '1px solid #E7C6FF'}}>Inicio de Sesion</button>{/*BOTON PARA ABRIR VENTANA MODAL*/} 
                         </div>
                             {/*ABRE PRIMER MODAL*/} 
                               <div className="modal fade" id="primermodal" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-centered">
+                                <div style={{width: '30%'}} className="modal-dialog modal-dialog-centered">
                                   <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
                                       <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
@@ -45,7 +45,7 @@ const Navbarinic = () =>{
                                           <label><input type="checkbox"/>Recuerdame</ label>
                                           < Link to ="#">Olvide la contraseña</ Link>
                                         </div>
-                                        <Link to="/Paginiciotaller" className="text-black text-decoration-none d-grid col-6 mx-auto "><button type="submit" className="btn text-light" style={{backgroundColor: '#C23373', width: '100%'}} data-bs-dismiss="modal" aria-label="Close">Entrar</button></Link>
+                                        <Link to="/Paginiciotaller" className="text-black text-decoration-none d-grid col-6 mx-auto "><button type="submit" className="btn text-light" style={{backgroundColor: '#3A0CA3', width: '100%'}} data-bs-dismiss="modal" aria-label="Close">Entrar</button></Link>
                                         <div className="login-register">
                                         </div>
                                       </form>
@@ -53,7 +53,7 @@ const Navbarinic = () =>{
                                     <div className="modal-footer justify-content-center">
                                       <p>¿No tienes una cuenta?</p>
                                       <div className="d-grid gap-2 d-md-block">
-                                      <button className="btn btn-sm text-light" style={{backgroundColor: '#C23373'}}  data-bs-target="#segundamodal"   data-bs-toggle="modal">Registarme</ button>
+                                      <button className="btn btn-sm text-light" style={{backgroundColor: '#3A0CA3'}}  data-bs-target="#segundamodal"   data-bs-toggle="modal">Registarme</ button>
                                       </div>
                                     </div>
                                   </div>
@@ -63,7 +63,7 @@ const Navbarinic = () =>{
 
                             {/*ABRE SEGUNDA MODAL*/} 
                             <div className="modal fade " id="segundamodal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                              <div className="modal-dialog modal-dialog-centered">
+                              <div style={{width: '30%'}} className="modal-dialog modal-dialog-centered">
                                 <div className="modal-content" style={{border: 'Solid'}}>
                                   <div className="modal-header">
                                     <h1 className="modal-title fs-5 " id="exampleModalLabel">Registrarse</h1>
@@ -87,7 +87,7 @@ const Navbarinic = () =>{
                                   <div className="modal-footer justify-content-center" style={{marginTop: '150px'}}>
                                     <p className="">¿Ya tienes una cuenta?</p>
                                     <div className="d-grid gap-2 d-md-block">
-                                      <button className="btn btn-sm text-light"  data-bs-target="#primermodal"   data-bs-toggle="modal" style={{backgroundColor: '#C23373'}}>Entrar</button>
+                                      <button className="btn btn-sm text-light"  data-bs-target="#primermodal"   data-bs-toggle="modal" style={{backgroundColor: '#3A0CA3'}}>Entrar</button>
                                     </div>
                                   </div>
                                 </div>
@@ -97,7 +97,7 @@ const Navbarinic = () =>{
 
                             {/*ABRE MODAL DE REGSITRO DE TALLER*/} 
                             <div className="modal fade" id="modalRegistroTaller" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-scrollable">
+                                <div style={{width: '30%'}} className="modal-dialog modal-dialog-scrollable">
                                   <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
                                       <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
@@ -144,7 +144,7 @@ const Navbarinic = () =>{
                                             <input type="checkbox" className="form-check-input " id="exampleCheck1"/>
                                             <label className="form-check-label" for="exampleCheck1">acepto terminos y condiciones</label>
                                           </div>
-                                          <button type="submit" className="btn text-light" style={{backgroundColor: '#C23373'}}>Registrate</button>
+                                          <button type="submit" className="btn text-light" style={{backgroundColor: '#3A0CA3'}}>Registrate</button>
                                       </form>
                                     </div>
                                     <div className="modal-footer justify-content-center">
@@ -159,7 +159,7 @@ const Navbarinic = () =>{
 
                             {/*ABRE MODAL DE REGSITRO DE EMPRESA*/} 
                             <div className="modal fade" id="modalRegistroEmpresa" tabindex="-1"  aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div className="modal-dialog modal-dialog-scrollable">
+                                <div style={{width: '30%'}} className="modal-dialog modal-dialog-scrollable">
                                   <div className="modal-content" style={{border: 'Solid'}}>
                                     <div className="modal-header">
                                       <h1 className="modal-title fs-5"  id="exampleModalLabel">Iniciar sesión</h1>
@@ -206,7 +206,7 @@ const Navbarinic = () =>{
                                             <input type="checkbox" className="form-check-input" id="exampleCheck1"/>
                                             <label className="form-check-label text-light" for="exampleCheck1">acepto terminos y condiciones</label>
                                           </div>
-                                          <button type="submit" className="btn btn-primary d-grid col-6 mx-auto" style={{width: '100'}}>Registrarse</button>
+                                          <button type="submit" className="btn d-grid col-6 mx-auto" style={{width: '100' , backgroundColor: '#3A0CA3'}}>Registrarse</button>
                                       </form>
                                     </div>
                                     <div className="modal-footer justify-content-center">

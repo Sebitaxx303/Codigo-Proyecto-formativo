@@ -8,7 +8,7 @@ const Inicio = () =>{
           <Navbarinic/>{/*NAV BAR PRINCIPAL DE INICIO */}
           {/*ABRE iNFONAV*/} 
           <header className="header justify-items-center">
-              <nav className="nav d-flex justify-content-center top-none" style={{backgroundColor: "#C23373"}}>
+              <nav className="nav d-flex justify-content-center top-none" style={{backgroundColor: "#3F37C9"}}>
                   <a href="#Tituloservicios">contacto</a>
                   <a href="#Tituloservicios">Servicios</a>
                   <a href="#Tituloservicios">Sobre nosotros</a>
@@ -17,7 +17,7 @@ const Inicio = () =>{
           {/*CIERRA iNFONAV*/}
           {/*ABRE CARRUSEL*/}         
           <div className="container rounded mt-5"  id="carrucel">
-                  <div id="carouselExampleCaptions" style={{border: '2px solid #F6635C'}} className=" rounded carousel slide">
+                  <div id="carouselExampleCaptions" style={{border: '2px solid #E7C6FF'}} className=" rounded carousel slide">
                     <div className="carousel-indicators" style={{color: '#79155B'}}>
                       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active"
                         aria-current="true" aria-label="Slide 1"></button>
@@ -62,9 +62,9 @@ const Inicio = () =>{
               <hr style={{color: '#79155B'}}/>
           </div>
           <div className="container mt-4" id="info">
-              <div className="row"style={{borderRadius:'3px'}}>
+              <div className="row">
                 <div className=" col-5 p-3">
-                  <img className="img-fluid" src="Images/servicios1.jpg" alt="" style={{borderRadius: '100%'}}/>
+                  <img className="img-fluid" style={{border: '3px solid #E7C6FF', borderRadius: '100%'}} src="Images/servicios1.jpg" alt=""/>
                 </div>
                 <div className="col-7 p-4 Servicios">
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae tenetur, nihil eos, id doloribus repudiandae consectetur cumque dicta praesentium rem sit temporibus voluptates suscipit saepe magnam tempora itaque distinctio!Lorem</span>
@@ -75,12 +75,12 @@ const Inicio = () =>{
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae tenetur, nihil eos, id doloribus repudiandae consectetur cumque dicta praesentium rem sit temporibus voluptates suscipit saepe magnam tempora itaque distinctio!Lorem Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi voluptatum obcaecati inventore dignissimos quibusdam repellat vero maiores aperiam perferendis, alias culpa ut a porro et. Repellendus perferendis similique facere atque!</span>
                 </div>
                 <div className=" col-5 p-3">
-                  <img className="img-fluid" src="Images/servicios2.jpg" alt="" style={{borderRadius: '100%'}}/>
+                  <img className="img-fluid" style={{border: '3px solid #E7C6FF', borderRadius: '100%'}} src="Images/servicios2.jpg" alt=""/>
                 </div>
               </div>
               <div className="row mt-3"style={{borderRadius:'3px'}}>
                 <div className=" col-5 p-3">
-                  <img className="img-fluid" src="Images/servicios3.jpg" alt="" style={{borderRadius: '100%'}}/>
+                  <img className="img-fluid" style={{border: '3px solid #E7C6FF', borderRadius: '100%'}} src="Images/servicios3.jpg" alt=""/>
                 </div>
                 <div className="col-7 p-4 Servicios">
                   <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, molestiae tenetur, nihil eos, id doloribus repudiandae consectetur cumque dicta praesentium rem sit temporibus voluptates suscipit saepe magnam tempora itaque distinctio!Lorem</span>
@@ -89,7 +89,7 @@ const Inicio = () =>{
           </div>
           {/*CIERRA SECCION INFO*/}
           {/*ABRE FOOTER*/} 
-          <footer className="container rounded-top bg-black text-center p-5 mt-4" style={{border: '2px solid #C23373'}}>
+          <footer className="container rounded-top bg-black text-center p-5 mt-4" style={{border: '2px solid #E7C6FF'}}>
                           < a to ="#"><svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor"
                               className="bi bi-facebook" viewBox="0 0 16 16">
                               <path
